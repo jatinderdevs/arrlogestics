@@ -448,6 +448,21 @@ ul li {
     font-weight: 600;
 }
 
+.callnow {
+    background: url('../img/req.jpg') no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.callnow::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
 @media (min-width:320px) {
 
     header {
