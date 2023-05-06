@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css">
-
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -28,23 +29,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto custmnav">
                         <li class="nav-item active ">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="service.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
+                            <a class="nav-link" href="aboutus.html">About us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">gallery</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">contact us</a>
                         </li>
                     </ul>
                     <div class="flex">
-                        <img src="img/icons/facebook.png" alt="">
+                        <a href="">
+                            <img src="img/icons/facebook.png" alt="">
+
+                        </a>
                         <img src="img/icons/instagram.png" alt="">
                         <img src="img/icons/whatsapp.png" alt="">
                     </div>
@@ -54,7 +56,17 @@
 
     </header>
     <section class="banner">
-        <img src="img/slider.jpg" height="450px" class="img-fluid" alt="">
+        <div id="banner" class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="img/sliders/slide1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/sliders/slide2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/sliders/slide3.jpg" alt="">
+            </div>
+        </div>
         <div class="layer">
             <div class="text-center">
                 <h2>
@@ -64,12 +76,10 @@
                 <br>
                 <a href="#" class="btncstm" class="btn btn-info">Get in Touch</a>
             </div>
-
-        </div>
     </section>
     <section>
         <div class="container">
-            <div class="row align-items-center">
+            <div id="about" class="row  align-items-center">
                 <div class="col-md-6">
                     <img src="img/about.jpg" class="img-fluid" alt="">
                 </div>
@@ -255,7 +265,7 @@
     <section class="p-0">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805190.2367433676!2d144.3937240705698!3d-37.970725997703425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1682212790732!5m2!1sen!2sau"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
@@ -263,15 +273,12 @@
         <div class="addressBar">
             <div class="container">
                 <div class="addressflex">
-                    <div>
-                        <img src="img/logowhite.png" width="80px" alt="">
 
-                    </div>
                     <div class="contact">
                         <img src="img/icons/pin.png" alt="">
                         <div>
-                            <p>Address : company name</p>
-                            <h5>California, USA</h5>
+                            <p>Address : ARR LOGESTICS</p>
+                            <h5>Melbourne, VIC</h5>
 
                         </div>
 
@@ -304,26 +311,41 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="img/logowhite.png" class="img-fluid" alt="">
+                        <div class="links">
+                            <h5>ARR LOGESTICS</h5>
+                            <br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quae dolorem possimus
+                                unde
+                                facilis aut assumenda molestiae illo harum fugiat ipsam maxime culpa at provident,
+                                similique, molestias sint voluptas! Voluptates, excepturi iusto fuga cupiditate odit
+                                harum
+                            </p>
+                        </div>
+
                     </div>
-                    <div class="col-md-3">
+
+                    <div class="col-md-4">
                         <div class="links">
                             <h5>Quick Links</h5>
-
                             <ul>
                                 <li><a href="">Home</a></li>
                                 <li><a href="">service</a></li>
                                 <li><a href="">about us</a></li>
-                                <li><a href="">gallery</a></li>
                                 <li><a href="">contact us</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
+                    <div class="col-md-4">
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="100%" height="auto" style="border:none;overflow:hidden" scrolling="no"
+                            frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
                 </div>
             </div>
-
+            <hr>
+            <p class="text-center m-0 p-0 text-white">&copy; Copyright reserved 2023</p>
         </div>
     </footer>
 </body>
@@ -335,6 +357,33 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script>
+    $(document).ready(function () {
+
+
+        $("#banner").owlCarousel({
+            loop: true,
+            autoplay: true,
+            dots: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 1,
+                    nav: false,
+                },
+                1000: {
+                    items: 1,
+                    nav: false,
+                },
+            },
+        });
+    });
 </script>
 
 </html>

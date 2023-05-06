@@ -25,13 +25,12 @@ body {
 
 header {
     background: white;
-    position: absolute;
+
 
     top: 40px;
     z-index: 99;
 
     box-shadow: 12px 12px 16px 0 rgba(255, 255, 255, 1) inset, -8px -8px 12px 0 rgba(0, 0, 0, 0.2) inset;
-    border-radius: 10px;
 
 }
 
@@ -46,7 +45,6 @@ a:hover {
 
 .banner {
     padding: 0;
-    height: 750px;
     overflow: hidden;
     position: relative;
 }
@@ -55,12 +53,12 @@ a:hover {
     position: absolute;
     inset: 0;
     display: grid;
+    z-index: 9;
     place-content: center;
 }
 
 .layer h2 {
-    font-size: 6.5rem;
-    line-height: 0.9;
+
     color: white;
     text-shadow: 0 0 10px transparent;
 
@@ -192,12 +190,12 @@ p {
     background: #8a0b00;
     color: white !important;
     border: 1px solid var(--main);
+    border-radius: 10px;
 }
 
 /* main heading design */
 h1 {
     margin: 0;
-    font-size: 3.5rem;
     text-transform: capitalize;
     font-weight: 600;
     -webkit-text-stroke: 2px #000000;
@@ -274,7 +272,6 @@ ul li {
     gap: 40px;
     padding: 20px 0;
     justify-content: space-between;
-    align-items: center;
 }
 
 .contact {
@@ -300,7 +297,7 @@ ul li {
 
 .contactCards {
     background: #333;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .links h5 {
@@ -319,7 +316,6 @@ ul li {
 }
 
 .links ul li a {
-    padding: 0 10px;
     color: white;
 }
 
@@ -330,12 +326,11 @@ ul li {
 }
 
 .links ul li:hover {
-    border-bottom: 1px solid white;
+    padding-left: 10px;
 }
 
 .breadcrumb {
     padding: 0;
-    height: 300px;
     background: url('../img/sliderimage.png') no-repeat center;
     background-size: cover;
     z-index: 1;
@@ -353,12 +348,15 @@ ul li {
 }
 
 .breadcrumb h1 {
-    padding-top: 11rem;
     text-align: center;
     color: var(--main);
     -webkit-text-stroke: unset;
 
 
+}
+
+.links p {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .text-justifiy {
@@ -463,34 +461,135 @@ ul li {
     background: rgba(255, 255, 255, 0.5);
 }
 
+label {
+    margin: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+input,
+textarea {
+    padding: 5px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#submit {
+    border: 0;
+    cursor: pointer;
+}
+
+.formcard {
+    padding: 20px 10px;
+    border: 1px solid #f9f9fb;
+}
+
 @media (min-width:320px) {
 
     header {
 
-        left: 20px;
-
-        right: 20px;
-
+        position: unset;
+        border-radius: unset;
 
     }
 
     .custmnav li a {
         padding: 10px 0;
     }
+
+    .banner {
+        height: unset;
+
+    }
+
+    #about {
+        flex-direction: column-reverse;
+    }
+
+    .layer h2 {
+        font-size: 2.5rem;
+        line-height: auto;
+    }
+
+    .fleet::before {
+
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+
+    }
+
+    .addressflex {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .breadcrumb {
+
+        height: auto;
+    }
+
+    .breadcrumb h1 {
+        padding-top: 3rem;
+    }
 }
 
 @media(min-width:1200px) {
     header {
-
+        position: absolute;
         left: 80px;
 
         right: 80px;
+        border-radius: 10px;
 
 
+    }
+
+    #about {
+        flex-direction: unset;
     }
 
     .custmnav li a {
         padding: 10px 20px !important;
 
+    }
+
+    .banner {
+        height: 750px;
+    }
+
+    .layer h2 {
+        font-size: 5.5rem;
+        line-height: 0.9;
+    }
+
+    .fleet::before {
+
+        width: 50%;
+        opacity: 1;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+
+    }
+
+    .addressflex {
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .breadcrumb {
+        height: 300px;
+
+    }
+
+    .breadcrumb h1 {
+        padding-top: 10rem;
     }
 }
