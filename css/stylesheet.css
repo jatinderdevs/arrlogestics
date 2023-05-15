@@ -16,6 +16,7 @@
     transition: ease-in-out all 450ms;
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -204,7 +205,7 @@ h1 {
 }
 
 .fleet {
-    background: url('../img/sliderimage.png') fixed left;
+    background: url('../img/updatedimage.png') fixed left;
     background-size: cover;
 
     position: relative;
@@ -484,6 +485,28 @@ textarea {
 .formcard {
     padding: 20px 10px;
     border: 1px solid #f9f9fb;
+}
+
+.quickCall {
+    position: fixed;
+    z-index: 99;
+    border-radius: 50%;
+    padding: 15px;
+    bottom: 20px;
+    background: var(--main);
+    right: 30px;
+    box-shadow: 0 0 10px;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: unset;
+    }
 }
 
 @media (min-width:320px) {
