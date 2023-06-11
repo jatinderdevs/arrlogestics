@@ -545,6 +545,28 @@ textarea {
     overflow: hidden;
 }
 
+.special {
+    letter-spacing: normal;
+    text-transform: capitalize;
+    font-weight: 400;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@keyframes blink {
+    from {
+        color: rgb(243, 236, 44);
+
+    }
+
+    to {
+        color: white;
+    }
+}
+
+
+
 @keyframes bounce {
     from {
         transform: scale(1.1);
