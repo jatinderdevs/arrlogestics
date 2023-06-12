@@ -243,7 +243,7 @@ ul li {
 .flex {
     display: flex;
     align-items: center;
-    gap: 20px;
+
 }
 
 .flex h5 {
@@ -628,9 +628,21 @@ textarea {
     .breadcrumb h1 {
         padding-top: 3rem;
     }
+
+    .flex {
+        flex-direction: column;
+        text-align: center;
+
+    }
 }
 
-@media(min-width:1200px) {
+@media(min-width:1170px) {
+    .flex {
+        flex-direction: unset;
+        gap: 20px;
+        text-align: unset;
+    }
+
     header {
         position: absolute;
         left: 80px;
